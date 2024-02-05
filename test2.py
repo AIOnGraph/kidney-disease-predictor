@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import joblib
 import base64
-
+st. set_page_config(layout="wide")
 # Load your pre-trained model and scaler
 scaler = joblib.load('standard_scalar_NN.pkl')
 model = joblib.load('svc_model.pkl')
