@@ -16,18 +16,7 @@ models = ['NN_model.pkl', 'svc_model.pkl', 'naive_bayes_model.pkl',
 st.title('Kidney Disease Predictor', anchor="Anchor")
 
 with st.container(border=True):
-    side_bg_ext = 'png'
-    side_bg = 'dr.png'
-    st.markdown(
-        f"""
-        <style>
-        [data-testid="stVerticalBlockBorderWrapper"] > div:first-child {{
-            background: url(data:image/{side_bg_ext};base64,{base64.b64encode(open(side_bg, "rb").read()).decode()});
-        }}
-        </style>
-        """,
-        unsafe_allow_html=True,
-        )
+    
    
     st.subheader('Medical information', divider=True)
     col1, col2 = st.columns(2)
